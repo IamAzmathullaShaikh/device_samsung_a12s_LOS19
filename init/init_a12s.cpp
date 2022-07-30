@@ -68,12 +68,10 @@ void vendor_load_properties() {
         model = GetProperty("ro.boot.em.model", "");
     }
 
-    if (model == "SM-M127F") {
-        set_build_fingerprint("m12", "m12nsxx", "M127FXXS3AVF3");
-    } else if (model == "SM-M127G") {
-        set_build_fingerprint("m12", "m12dd", "M127GDDS3AVF1");
-    } else if (model == "SM-F127G") {
-        set_build_fingerprint("f12", "f12dd", "F127GDDS3AVF1");
+    if (model == "SM-A127F") {
+        set_build_fingerprint("a12s", "a12snsxx", "A127FXXS5AVE1");
+    } else if (model == "SM-A127M") {
+        set_build_fingerprint("a12s", "a12snsxx", "A127MUBS5AVE1");
     } else {
         LOG(ERROR) << __func__ << ": Coudn't indentify model!";
     }
