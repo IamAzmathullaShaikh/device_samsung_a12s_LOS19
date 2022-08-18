@@ -11,17 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 ## Inherit from a12s device
 $(call inherit-product, device/samsung/a12s/device.mk)
 
-## Boot Animation
-TARGET_SCREEN_HEIGHT := 1600
-TARGET_SCREEN_WIDTH := 720
-
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-## Device identifier, this must come after all inclusions
+# Device identifier, this must come after all inclusions
 PRODUCT_NAME := lineage_a12s
 PRODUCT_DEVICE := a12s
 PRODUCT_BRAND := samsung
