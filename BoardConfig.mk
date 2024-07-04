@@ -6,6 +6,8 @@
 
 ## Device Path
 DEVICE_PATH := device/samsung/a12s
+ALLOW_MISSING_DEPENDENCIES=true
+BUILD_BROKEN_DUP_RULES=true
 
 ## Inherit from the common tree
 include device/samsung/exynos850-common/BoardConfigCommon.mk
